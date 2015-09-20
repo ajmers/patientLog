@@ -10,6 +10,8 @@
 		9202A6B51BAF49830074C342 /* patientIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9202A6B41BAF49830074C342 /* patientIcon.png */; };
 		9202A6B71BAF4A260074C342 /* bar-chart.png in Resources */ = {isa = PBXBuildFile; fileRef = 9202A6B61BAF4A260074C342 /* bar-chart.png */; };
 		92036FA41BAE5B9000BF33F1 /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92036FA31BAE5B9000BF33F1 /* DateViewController.m */; };
+		922A38DC1BAF505C007AF782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 922A38DA1BAF505C007AF782 /* Main.storyboard */; };
+		922A38E01BAF53B6007AF782 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 922A38DF1BAF53B6007AF782 /* plus.png */; };
 		924B5B711BADFB34003D30E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B5B701BADFB34003D30E4 /* main.m */; };
 		924B5B741BADFB34003D30E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B5B731BADFB34003D30E4 /* AppDelegate.m */; };
 		924B5B771BADFB34003D30E4 /* patientLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 924B5B751BADFB34003D30E4 /* patientLog.xcdatamodeld */; };
@@ -38,6 +40,8 @@
 		9202A6B61BAF4A260074C342 /* bar-chart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-chart.png"; sourceTree = "<group>"; };
 		92036FA21BAE5B9000BF33F1 /* DateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateViewController.h; sourceTree = "<group>"; };
 		92036FA31BAE5B9000BF33F1 /* DateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateViewController.m; sourceTree = "<group>"; };
+		922A38DB1BAF505C007AF782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		922A38DF1BAF53B6007AF782 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		924B5B6B1BADFB34003D30E4 /* patientLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = patientLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		924B5B6F1BADFB34003D30E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		924B5B701BADFB34003D30E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -82,6 +86,7 @@
 		924B5B621BADFB34003D30E4 = {
 			isa = PBXGroup;
 			children = (
+				922A38DF1BAF53B6007AF782 /* plus.png */,
 				9202A6B61BAF4A260074C342 /* bar-chart.png */,
 				9202A6B41BAF49830074C342 /* patientIcon.png */,
 				924B5B6D1BADFB34003D30E4 /* patientLog */,
@@ -116,6 +121,7 @@
 				924B5B9E1BAE2FD1003D30E4 /* PLpatient.m */,
 				924B5B971BADFD9C003D30E4 /* CoreDataStack.h */,
 				924B5B981BADFD9C003D30E4 /* CoreDataStack.m */,
+				922A38DA1BAF505C007AF782 /* Main.storyboard */,
 				924B5B7E1BADFB34003D30E4 /* Images.xcassets */,
 				924B5B801BADFB34003D30E4 /* LaunchScreen.xib */,
 				924B5B751BADFB34003D30E4 /* patientLog.xcdatamodeld */,
@@ -231,9 +237,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9202A6B51BAF49830074C342 /* patientIcon.png in Resources */,
+				922A38DC1BAF505C007AF782 /* Main.storyboard in Resources */,
 				924B5B821BADFB34003D30E4 /* LaunchScreen.xib in Resources */,
 				9202A6B71BAF4A260074C342 /* bar-chart.png in Resources */,
 				924B5B7F1BADFB34003D30E4 /* Images.xcassets in Resources */,
+				922A38E01BAF53B6007AF782 /* plus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +290,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		922A38DA1BAF505C007AF782 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				922A38DB1BAF505C007AF782 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		924B5B801BADFB34003D30E4 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
