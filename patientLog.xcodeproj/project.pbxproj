@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9202A6B51BAF49830074C342 /* patientIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9202A6B41BAF49830074C342 /* patientIcon.png */; };
+		9202A6B71BAF4A260074C342 /* bar-chart.png in Resources */ = {isa = PBXBuildFile; fileRef = 9202A6B61BAF4A260074C342 /* bar-chart.png */; };
 		92036FA41BAE5B9000BF33F1 /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92036FA31BAE5B9000BF33F1 /* DateViewController.m */; };
 		924B5B711BADFB34003D30E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B5B701BADFB34003D30E4 /* main.m */; };
 		924B5B741BADFB34003D30E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B5B731BADFB34003D30E4 /* AppDelegate.m */; };
 		924B5B771BADFB34003D30E4 /* patientLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 924B5B751BADFB34003D30E4 /* patientLog.xcdatamodeld */; };
 		924B5B7A1BADFB34003D30E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B5B791BADFB34003D30E4 /* ViewController.m */; };
-		924B5B7D1BADFB34003D30E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924B5B7B1BADFB34003D30E4 /* Main.storyboard */; };
 		924B5B7F1BADFB34003D30E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 924B5B7E1BADFB34003D30E4 /* Images.xcassets */; };
 		924B5B821BADFB34003D30E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 924B5B801BADFB34003D30E4 /* LaunchScreen.xib */; };
 		924B5B8E1BADFB34003D30E4 /* patientLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B5B8D1BADFB34003D30E4 /* patientLogTests.m */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9202A6B41BAF49830074C342 /* patientIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = patientIcon.png; sourceTree = "<group>"; };
+		9202A6B61BAF4A260074C342 /* bar-chart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-chart.png"; sourceTree = "<group>"; };
 		92036FA21BAE5B9000BF33F1 /* DateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateViewController.h; sourceTree = "<group>"; };
 		92036FA31BAE5B9000BF33F1 /* DateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateViewController.m; sourceTree = "<group>"; };
 		924B5B6B1BADFB34003D30E4 /* patientLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = patientLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,7 +46,6 @@
 		924B5B761BADFB34003D30E4 /* patientLog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = patientLog.xcdatamodel; sourceTree = "<group>"; };
 		924B5B781BADFB34003D30E4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		924B5B791BADFB34003D30E4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		924B5B7C1BADFB34003D30E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		924B5B7E1BADFB34003D30E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		924B5B811BADFB34003D30E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		924B5B871BADFB34003D30E4 /* patientLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = patientLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,8 @@
 		924B5B621BADFB34003D30E4 = {
 			isa = PBXGroup;
 			children = (
+				9202A6B61BAF4A260074C342 /* bar-chart.png */,
+				9202A6B41BAF49830074C342 /* patientIcon.png */,
 				924B5B6D1BADFB34003D30E4 /* patientLog */,
 				924B5B8A1BADFB34003D30E4 /* patientLogTests */,
 				924B5B6C1BADFB34003D30E4 /* Products */,
@@ -112,7 +116,6 @@
 				924B5B9E1BAE2FD1003D30E4 /* PLpatient.m */,
 				924B5B971BADFD9C003D30E4 /* CoreDataStack.h */,
 				924B5B981BADFD9C003D30E4 /* CoreDataStack.m */,
-				924B5B7B1BADFB34003D30E4 /* Main.storyboard */,
 				924B5B7E1BADFB34003D30E4 /* Images.xcassets */,
 				924B5B801BADFB34003D30E4 /* LaunchScreen.xib */,
 				924B5B751BADFB34003D30E4 /* patientLog.xcdatamodeld */,
@@ -227,8 +230,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				924B5B7D1BADFB34003D30E4 /* Main.storyboard in Resources */,
+				9202A6B51BAF49830074C342 /* patientIcon.png in Resources */,
 				924B5B821BADFB34003D30E4 /* LaunchScreen.xib in Resources */,
+				9202A6B71BAF4A260074C342 /* bar-chart.png in Resources */,
 				924B5B7F1BADFB34003D30E4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,14 +282,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		924B5B7B1BADFB34003D30E4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				924B5B7C1BADFB34003D30E4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		924B5B801BADFB34003D30E4 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

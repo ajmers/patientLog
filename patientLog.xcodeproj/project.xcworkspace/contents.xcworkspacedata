@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:patient.png">
+   </FileRef>
+   <FileRef
+      location = "group:patient.jpg">
+   </FileRef>
+   <FileRef
       location = "self:patientLog.xcodeproj">
    </FileRef>
 </Workspace>

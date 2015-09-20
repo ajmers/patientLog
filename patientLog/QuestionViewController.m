@@ -32,6 +32,7 @@
     _question = question;
     [_label setText:question];
     
+    
     NSDictionary *questionsDictionary = [UIAppDelegate questions];
     NSArray *values = [questionsDictionary valueForKey:question];
     
@@ -55,13 +56,11 @@
         [self.view addSubview:button];
         _top += 50;
     }
-        
-
 }
 
 - (NSArray *)questions {
     if (_questions == nil) {
-        _questions = @[@"age", @"gender", @"ailment", @"date"];
+        _questions = @[@"age", @"gender", @"diagnosis", @"date"];
         return _questions;
     } else {
         return _questions;
@@ -75,7 +74,7 @@
                                                       inManagedObjectContext:coreDataStack.managedObjectContext];
         return patient;
     } else {
-        return self.patient;
+        return _patient;
     }
 }
 
@@ -106,7 +105,8 @@
     } else if ([[_questions objectAtIndex:_currentIndex + 1] isEqualToString:@"date"]) {
         DateViewController *dateView = [self.storyboard instantiateViewControllerWithIdentifier:@"Date"];
         [dateView setPatient:patient];
-        [dateView setCurrentIndex:_currentIndex];
+        [dateView setQuestions:_questions];
+        [dateView setCurrentIndex:_currentIndex + 1];
         [self.navigationController pushViewController:dateView animated:YES];
     } else {
         QuestionViewController *nextQuestion = [self.storyboard instantiateViewControllerWithIdentifier:@"Question"];

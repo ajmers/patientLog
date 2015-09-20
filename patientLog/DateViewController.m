@@ -13,6 +13,7 @@
 @interface DateViewController ()
 
 @property (weak, nonatomic) IBOutlet UIDatePicker *date;
+@property (weak, nonatomic) IBOutlet UIButton *confirmButton;
 
 @end
 
@@ -20,6 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self createButtonsForValue:@"Continue"];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -37,7 +40,24 @@
     // Pass the selected object to the new view controller.
 }
 */
-- (IBAction)buttonWasPressed:(id)sender {
+
+- (void) createButtonsForValue:(NSString*)value {
+    CGFloat top = 200;
+    
+    UIButton *button = [[UIButton alloc] init];
+    CGSize stringsize = [value sizeWithFont:[UIFont systemFontOfSize:30]];
+    [button setFrame:CGRectMake(40,top,stringsize.width,stringsize.height)];
+    button.layer.masksToBounds = YES;
+    button.layer.cornerRadius = 15.0;
+    [button setBackgroundColor:[UIColor blueColor]];
+    [button setTitle:value forState:UIControlStateNormal];
+    [button addTarget:self
+                 action:@selector(continueWasPressed:)
+       forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+}
+
+- (IBAction)continueWasPressed:(id)sender {
    
     NSDate *date = _date.date;
     [_patient setDate:date];
@@ -50,6 +70,7 @@
     } else {
         QuestionViewController *nextQuestion = [self.storyboard instantiateViewControllerWithIdentifier:@"Question"];
         [nextQuestion setCurrentIndex:_currentIndex + 1];
+        [nextQuestion setQuestions: _questions];
         [nextQuestion setPatient:_patient];
         [self.navigationController pushViewController:nextQuestion animated:YES];
     }

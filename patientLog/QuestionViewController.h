@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PLpatient.h"
 
 @interface QuestionViewController : UIViewController
 

@@ -12,7 +12,7 @@
 @interface DateViewController : UIViewController
 
 @property (strong, nonatomic) PLpatient *patient;
-@property (strong, nonatomic) NSArray *questions;
+@property (nonatomic, strong) NSArray *questions;
 @property (nonatomic) NSInteger currentIndex;
 
 @end

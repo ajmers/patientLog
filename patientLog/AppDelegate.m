@@ -53,11 +53,11 @@
     {
         NSArray *genders = @[@"male", @"female"];
         NSArray *ages = @[@"<10", @">60", @"Other"];
-        NSArray *ailments = @[@"joint pain", @"ob-gyn", @"gastrointestinal"];
+        NSArray *diagnoses = @[@"joint pain", @"ob-gyn", @"gastrointestinal"];
         _questions = [[NSMutableDictionary alloc] init];
         [_questions setValue:genders forKey:@"gender"];
         [_questions setValue:ages forKey:@"age"];
-        [_questions setValue:ailments forKey:@"ailment"];
+        [_questions setValue:diagnoses forKey:@"diagnosis"];
         [_questions setValue:[NSDate date] forKey:@"date"];
     }
     
