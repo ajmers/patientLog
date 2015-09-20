@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (nonatomic) CGFloat top;
 @property (weak, nonatomic) NSString *question;
+@property (weak, nonatomic) IBOutlet UILabel *lastPatientTimeLabel;
 
 @end
 
@@ -27,7 +28,8 @@
     [super viewDidLoad];
     if (_currentIndex == nil) {
         _currentIndex = 0;
-    } 
+    }
+    
     NSString *question = [self.questions objectAtIndex:_currentIndex];
     _question = question;
     [_label setText:question];
@@ -40,22 +42,36 @@
     // Do any additional setup after loading the view.
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:YES];
+    [self setLastSavedLabel];
+}
+
 - (void) createButtonsForValues:(NSArray*)values {
     _top = 200;
     for (NSString *answer in values) {
         UIButton *button = [[UIButton alloc] init];
         CGSize stringsize = [answer sizeWithFont:[UIFont systemFontOfSize:30]];
-        [button setFrame:CGRectMake(40,_top,stringsize.width,stringsize.height)];
+        [button setFrame:CGRectMake(40,_top,300,stringsize.height *1.5)];
         button.layer.masksToBounds = YES;
         button.layer.cornerRadius = 15.0;
-        [button setBackgroundColor:[UIColor blueColor]];
+        [button setBackgroundColor:[UIColor colorWithRed:0.80 green:1.00 blue:0.80 alpha:1.0]];
+        [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         [button setTitle:answer forState:UIControlStateNormal];
         [button addTarget:self
                      action:@selector(buttonWasPressed:)
            forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:button];
-        _top += 50;
+        _top += 70;
     }
+}
+
+- (void)setLastSavedLabel {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:[NSDateFormatter dateFormatFromTemplate:@"hh:mm a" options:0 locale:[NSLocale currentLocale]]];
+    NSString *formattedDate = [dateFormatter stringFromDate:_lastPatientTime];
+    
+    _lastPatientTimeLabel.text = formattedDate;
 }
 
 - (NSArray *)questions {

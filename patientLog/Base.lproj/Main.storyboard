@@ -23,17 +23,30 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4c-oU-KjT">
+                                <rect key="frame" x="102" y="503" width="385" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="kAM-kY-HXl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99494949494949492" green="0.95321015450144886" blue="0.88617198296240651" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="j06-Nf-TeB" secondAttribute="bottom" constant="400" id="59f-4q-TWM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="N4c-oU-KjT" secondAttribute="trailing" constant="97" id="5qY-30-iwW"/>
                             <constraint firstItem="j06-Nf-TeB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HDD-GG-zFN"/>
                             <constraint firstItem="j06-Nf-TeB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="WgQ-og-R1p"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="N4c-oU-KjT" secondAttribute="bottom" constant="27" id="cuH-J7-edU"/>
+                            <constraint firstItem="N4c-oU-KjT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="86" id="pym-dq-7w1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IyW-tl-4cz"/>
                     <connections>
                         <outlet property="label" destination="j06-Nf-TeB" id="Xpk-if-WhM"/>
+                        <outlet property="lastPatientTimeLabel" destination="N4c-oU-KjT" id="hHb-8U-5lh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -59,7 +72,7 @@
                                 </date>
                             </datePicker>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.95294117647058818" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="3Ts-gR-pmD" secondAttribute="trailing" constant="-32" id="2Iq-5u-ZW1"/>
                             <constraint firstItem="3Ts-gR-pmD" firstAttribute="leading" secondItem="hjX-vg-5z6" secondAttribute="leadingMargin" id="MGe-Nx-tXW"/>
@@ -82,12 +95,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.99494949489999995" green="0.95321015450000002" blue="0.886171983" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" restorationIdentifier="Confirmation" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="e8n-20-NRa">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e8n-20-NRa" id="39o-Rf-Ofn">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.99494949489999995" green="0.95321015450000002" blue="0.886171983" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>

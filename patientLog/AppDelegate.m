@@ -19,6 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     _questions = self.questions;
+    self.window.backgroundColor = [UIColor colorWithRed:0.980f green:0.749f blue:0.478f alpha:1.00f];
     return YES;
 }
 

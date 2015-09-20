@@ -14,5 +14,6 @@
 @property (nonatomic, strong) NSArray *questions;
 @property (nonatomic) NSInteger currentIndex;
 @property (strong, nonatomic) PLpatient *patient;
+@property (strong, nonatomic) NSDate *lastPatientTime;
 
 @end

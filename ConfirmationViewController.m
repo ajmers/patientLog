@@ -7,6 +7,7 @@
 //
 
 #import "ConfirmationViewController.h"
+#import "QuestionViewController.h"
 #import "PLpatient.h"
 #import "CoreDataStack.h"
 
@@ -19,6 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.view setBackgroundColor:[UIColor colorWithRed:0.992f green:0.941f blue:0.863f alpha:1.00f]];
     
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     [self.tableView setContentInset:UIEdgeInsetsMake(50,0,0,0)];
@@ -95,7 +98,8 @@
     [button setFrame:CGRectMake(40,top,stringsize.width,stringsize.height)];
     button.layer.masksToBounds = YES;
     button.layer.cornerRadius = 15.0;
-    [button setBackgroundColor:[UIColor blueColor]];
+    [button setBackgroundColor:[UIColor colorWithRed:0.80 green:1.00 blue:0.80 alpha:1.0]];
+    [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     [button setTitle:text forState:UIControlStateNormal];
     [button addTarget:self
                    action:@selector(submitWasPressed:)
@@ -154,6 +158,10 @@
 - (IBAction)submitWasPressed:(id)sender {
     CoreDataStack *coreDataStack = [CoreDataStack defaultStack];
     [coreDataStack saveContext];
+    QuestionViewController* rootViewController = [[self.navigationController viewControllers] objectAtIndex:0];
+    [rootViewController setPatient:nil];
+    [rootViewController setCurrentIndex:0];
+    [rootViewController setLastPatientTime:[_patient valueForKey:@"date"]];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 

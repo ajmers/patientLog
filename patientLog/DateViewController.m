@@ -49,7 +49,8 @@
     [button setFrame:CGRectMake(40,top,stringsize.width,stringsize.height)];
     button.layer.masksToBounds = YES;
     button.layer.cornerRadius = 15.0;
-    [button setBackgroundColor:[UIColor blueColor]];
+    [button setBackgroundColor:[UIColor colorWithRed:0.80 green:1.00 blue:0.80 alpha:1.0]];
+    [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     [button setTitle:value forState:UIControlStateNormal];
     [button addTarget:self
                  action:@selector(continueWasPressed:)
