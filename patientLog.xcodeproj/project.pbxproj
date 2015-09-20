@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92036FA41BAE5B9000BF33F1 /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92036FA31BAE5B9000BF33F1 /* DateViewController.m */; };
+		924B5B711BADFB34003D30E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B5B701BADFB34003D30E4 /* main.m */; };
+		924B5B741BADFB34003D30E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B5B731BADFB34003D30E4 /* AppDelegate.m */; };
+		924B5B771BADFB34003D30E4 /* patientLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 924B5B751BADFB34003D30E4 /* patientLog.xcdatamodeld */; };
+		924B5B7A1BADFB34003D30E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B5B791BADFB34003D30E4 /* ViewController.m */; };
+		924B5B7D1BADFB34003D30E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924B5B7B1BADFB34003D30E4 /* Main.storyboard */; };
+		924B5B7F1BADFB34003D30E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 924B5B7E1BADFB34003D30E4 /* Images.xcassets */; };
+		924B5B821BADFB34003D30E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 924B5B801BADFB34003D30E4 /* LaunchScreen.xib */; };
+		924B5B8E1BADFB34003D30E4 /* patientLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B5B8D1BADFB34003D30E4 /* patientLogTests.m */; };
+		924B5B991BADFD9C003D30E4 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B5B981BADFD9C003D30E4 /* CoreDataStack.m */; };
+		924B5B9F1BAE2FD1003D30E4 /* PLpatient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B5B9E1BAE2FD1003D30E4 /* PLpatient.m */; };
+		92CC18CF1BAE31B200FE293A /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CC18CE1BAE31B200FE293A /* QuestionViewController.m */; };
+		92CC18D51BAE511A00FE293A /* ConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CC18D41BAE511A00FE293A /* ConfirmationViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		924B5B881BADFB34003D30E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 924B5B631BADFB34003D30E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 924B5B6A1BADFB34003D30E4;
+			remoteInfo = patientLog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		92036FA21BAE5B9000BF33F1 /* DateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateViewController.h; sourceTree = "<group>"; };
+		92036FA31BAE5B9000BF33F1 /* DateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateViewController.m; sourceTree = "<group>"; };
+		924B5B6B1BADFB34003D30E4 /* patientLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = patientLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		924B5B6F1BADFB34003D30E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		924B5B701BADFB34003D30E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		924B5B721BADFB34003D30E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		924B5B731BADFB34003D30E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		924B5B761BADFB34003D30E4 /* patientLog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = patientLog.xcdatamodel; sourceTree = "<group>"; };
+		924B5B781BADFB34003D30E4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		924B5B791BADFB34003D30E4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		924B5B7C1BADFB34003D30E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		924B5B7E1BADFB34003D30E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		924B5B811BADFB34003D30E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		924B5B871BADFB34003D30E4 /* patientLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = patientLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		924B5B8C1BADFB34003D30E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		924B5B8D1BADFB34003D30E4 /* patientLogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = patientLogTests.m; sourceTree = "<group>"; };
+		924B5B971BADFD9C003D30E4 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		924B5B981BADFD9C003D30E4 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		924B5B9D1BAE2FD1003D30E4 /* PLpatient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLpatient.h; sourceTree = "<group>"; };
+		924B5B9E1BAE2FD1003D30E4 /* PLpatient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLpatient.m; sourceTree = "<group>"; };
+		92CC18CD1BAE31B200FE293A /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
+		92CC18CE1BAE31B200FE293A /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
+		92CC18D31BAE511A00FE293A /* ConfirmationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfirmationViewController.h; path = ../ConfirmationViewController.h; sourceTree = "<group>"; };
+		92CC18D41BAE511A00FE293A /* ConfirmationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfirmationViewController.m; path = ../ConfirmationViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		924B5B681BADFB34003D30E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924B5B841BADFB34003D30E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		924B5B621BADFB34003D30E4 = {
+			isa = PBXGroup;
+			children = (
+				924B5B6D1BADFB34003D30E4 /* patientLog */,
+				924B5B8A1BADFB34003D30E4 /* patientLogTests */,
+				924B5B6C1BADFB34003D30E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		924B5B6C1BADFB34003D30E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				924B5B6B1BADFB34003D30E4 /* patientLog.app */,
+				924B5B871BADFB34003D30E4 /* patientLogTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		924B5B6D1BADFB34003D30E4 /* patientLog */ = {
+			isa = PBXGroup;
+			children = (
+				924B5B721BADFB34003D30E4 /* AppDelegate.h */,
+				924B5B731BADFB34003D30E4 /* AppDelegate.m */,
+				924B5B781BADFB34003D30E4 /* ViewController.h */,
+				924B5B791BADFB34003D30E4 /* ViewController.m */,
+				92CC18CD1BAE31B200FE293A /* QuestionViewController.h */,
+				92CC18CE1BAE31B200FE293A /* QuestionViewController.m */,
+				92036FA21BAE5B9000BF33F1 /* DateViewController.h */,
+				92036FA31BAE5B9000BF33F1 /* DateViewController.m */,
+				92CC18D31BAE511A00FE293A /* ConfirmationViewController.h */,
+				92CC18D41BAE511A00FE293A /* ConfirmationViewController.m */,
+				924B5B9D1BAE2FD1003D30E4 /* PLpatient.h */,
+				924B5B9E1BAE2FD1003D30E4 /* PLpatient.m */,
+				924B5B971BADFD9C003D30E4 /* CoreDataStack.h */,
+				924B5B981BADFD9C003D30E4 /* CoreDataStack.m */,
+				924B5B7B1BADFB34003D30E4 /* Main.storyboard */,
+				924B5B7E1BADFB34003D30E4 /* Images.xcassets */,
+				924B5B801BADFB34003D30E4 /* LaunchScreen.xib */,
+				924B5B751BADFB34003D30E4 /* patientLog.xcdatamodeld */,
+				924B5B6E1BADFB34003D30E4 /* Supporting Files */,
+			);
+			path = patientLog;
+			sourceTree = "<group>";
+		};
+		924B5B6E1BADFB34003D30E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				924B5B6F1BADFB34003D30E4 /* Info.plist */,
+				924B5B701BADFB34003D30E4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		924B5B8A1BADFB34003D30E4 /* patientLogTests */ = {
+			isa = PBXGroup;
+			children = (
+				924B5B8D1BADFB34003D30E4 /* patientLogTests.m */,
+				924B5B8B1BADFB34003D30E4 /* Supporting Files */,
+			);
+			path = patientLogTests;
+			sourceTree = "<group>";
+		};
+		924B5B8B1BADFB34003D30E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				924B5B8C1BADFB34003D30E4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		924B5B6A1BADFB34003D30E4 /* patientLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 924B5B911BADFB34003D30E4 /* Build configuration list for PBXNativeTarget "patientLog" */;
+			buildPhases = (
+				924B5B671BADFB34003D30E4 /* Sources */,
+				924B5B681BADFB34003D30E4 /* Frameworks */,
+				924B5B691BADFB34003D30E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = patientLog;
+			productName = patientLog;
+			productReference = 924B5B6B1BADFB34003D30E4 /* patientLog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		924B5B861BADFB34003D30E4 /* patientLogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 924B5B941BADFB34003D30E4 /* Build configuration list for PBXNativeTarget "patientLogTests" */;
+			buildPhases = (
+				924B5B831BADFB34003D30E4 /* Sources */,
+				924B5B841BADFB34003D30E4 /* Frameworks */,
+				924B5B851BADFB34003D30E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				924B5B891BADFB34003D30E4 /* PBXTargetDependency */,
+			);
+			name = patientLogTests;
+			productName = patientLogTests;
+			productReference = 924B5B871BADFB34003D30E4 /* patientLogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		924B5B631BADFB34003D30E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Anne Maiale";
+				TargetAttributes = {
+					924B5B6A1BADFB34003D30E4 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					924B5B861BADFB34003D30E4 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 924B5B6A1BADFB34003D30E4;
+					};
+				};
+			};
+			buildConfigurationList = 924B5B661BADFB34003D30E4 /* Build configuration list for PBXProject "patientLog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 924B5B621BADFB34003D30E4;
+			productRefGroup = 924B5B6C1BADFB34003D30E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				924B5B6A1BADFB34003D30E4 /* patientLog */,
+				924B5B861BADFB34003D30E4 /* patientLogTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		924B5B691BADFB34003D30E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924B5B7D1BADFB34003D30E4 /* Main.storyboard in Resources */,
+				924B5B821BADFB34003D30E4 /* LaunchScreen.xib in Resources */,
+				924B5B7F1BADFB34003D30E4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924B5B851BADFB34003D30E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		924B5B671BADFB34003D30E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924B5B991BADFD9C003D30E4 /* CoreDataStack.m in Sources */,
+				924B5B771BADFB34003D30E4 /* patientLog.xcdatamodeld in Sources */,
+				924B5B741BADFB34003D30E4 /* AppDelegate.m in Sources */,
+				92CC18CF1BAE31B200FE293A /* QuestionViewController.m in Sources */,
+				92036FA41BAE5B9000BF33F1 /* DateViewController.m in Sources */,
+				924B5B9F1BAE2FD1003D30E4 /* PLpatient.m in Sources */,
+				924B5B7A1BADFB34003D30E4 /* ViewController.m in Sources */,
+				924B5B711BADFB34003D30E4 /* main.m in Sources */,
+				92CC18D51BAE511A00FE293A /* ConfirmationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924B5B831BADFB34003D30E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924B5B8E1BADFB34003D30E4 /* patientLogTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		924B5B891BADFB34003D30E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 924B5B6A1BADFB34003D30E4 /* patientLog */;
+			targetProxy = 924B5B881BADFB34003D30E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		924B5B7B1BADFB34003D30E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				924B5B7C1BADFB34003D30E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		924B5B801BADFB34003D30E4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				924B5B811BADFB34003D30E4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		924B5B8F1BADFB34003D30E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		924B5B901BADFB34003D30E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		924B5B921BADFB34003D30E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = patientLog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		924B5B931BADFB34003D30E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = patientLog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		924B5B951BADFB34003D30E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = patientLogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/patientLog.app/patientLog";
+			};
+			name = Debug;
+		};
+		924B5B961BADFB34003D30E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = patientLogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/patientLog.app/patientLog";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		924B5B661BADFB34003D30E4 /* Build configuration list for PBXProject "patientLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				924B5B8F1BADFB34003D30E4 /* Debug */,
+				924B5B901BADFB34003D30E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		924B5B911BADFB34003D30E4 /* Build configuration list for PBXNativeTarget "patientLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				924B5B921BADFB34003D30E4 /* Debug */,
+				924B5B931BADFB34003D30E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		924B5B941BADFB34003D30E4 /* Build configuration list for PBXNativeTarget "patientLogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				924B5B951BADFB34003D30E4 /* Debug */,
+				924B5B961BADFB34003D30E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		924B5B751BADFB34003D30E4 /* patientLog.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				924B5B761BADFB34003D30E4 /* patientLog.xcdatamodel */,
+			);
+			currentVersion = 924B5B761BADFB34003D30E4 /* patientLog.xcdatamodel */;
+			path = patientLog.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 924B5B631BADFB34003D30E4 /* Project object */;
+}
