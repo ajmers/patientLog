@@ -98,14 +98,12 @@
     [button setFrame:CGRectMake(40,top,stringsize.width,stringsize.height)];
     button.layer.masksToBounds = YES;
     button.layer.cornerRadius = 15.0;
-    [button setBackgroundColor:[UIColor colorWithRed:0.80 green:1.00 blue:0.80 alpha:1.0]];
-    [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+    [button setBackgroundColor:[UIColor colorWithRed:0.682f green:0.847f blue:0.898f alpha:1.00f]];
+    [button setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
     [button setTitle:text forState:UIControlStateNormal];
     [button addTarget:self
                    action:@selector(submitWasPressed:)
          forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:button];
-    
     [headerView addSubview:button];
     
     [self.tableView setTableHeaderView:headerView];

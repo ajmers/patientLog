@@ -20,7 +20,25 @@
     // Override point for customization after application launch.
     _questions = self.questions;
     self.window.backgroundColor = [UIColor colorWithRed:0.980f green:0.749f blue:0.478f alpha:1.00f];
+    
+    NSError *error = nil;
+    
+    NSDictionary *dict = [AppDelegate dictionaryWithContentsOfJSONString:@"patientLogConfig.json"];
+    
     return YES;
+}
+
++(NSDictionary*)dictionaryWithContentsOfJSONString:(NSString*)fileLocation{
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:[fileLocation stringByDeletingPathExtension] ofType:@"JSON"];
+    NSData* data = [NSData dataWithContentsOfFile:filePath];
+    __autoreleasing NSError* error = nil;
+    id result = [NSJSONSerialization JSONObjectWithData:data
+                                                options:kNilOptions error:&error];
+    // Be careful here. You add this as a category to NSDictionary
+    // but you get an id back, which means that result
+    // might be an NSArray as well!
+    if (error != nil) return nil;
+    return result;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

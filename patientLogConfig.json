@@ -1,0 +1,19 @@
+{
+    "email": "amaiale@gmail.com",
+    "questions": {
+
+        "age": {
+            "type": "list",
+            "answers": ["<10", ">60", "other"]
+        },
+        "diagnosis": {
+            "type": "list",
+            "answers": ["ob-gyn", "gastrointestinal", "joint paint"]
+        },
+        "gender": {
+            "type": "list",
+            "answers": ["male", "female"]
+        }
+    }
+
+}

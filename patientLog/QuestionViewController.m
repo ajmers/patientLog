@@ -18,7 +18,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (nonatomic) CGFloat top;
 @property (weak, nonatomic) NSString *question;
-@property (weak, nonatomic) IBOutlet UILabel *lastPatientTimeLabel;
+@property (weak, nonatomic) IBOutlet UIView *lastPatientView;
+@property (weak, nonatomic) IBOutlet UILabel *lastPatientViewLabel;
 
 @end
 
@@ -44,7 +45,7 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:YES];
-    [self setLastSavedLabel];
+    [self createLastSavedLabel];
 }
 
 - (void) createButtonsForValues:(NSArray*)values {
@@ -55,7 +56,7 @@
         [button setFrame:CGRectMake(40,_top,300,stringsize.height *1.5)];
         button.layer.masksToBounds = YES;
         button.layer.cornerRadius = 15.0;
-        [button setBackgroundColor:[UIColor colorWithRed:0.80 green:1.00 blue:0.80 alpha:1.0]];
+        [button setBackgroundColor:[UIColor colorWithRed:0.682f green:0.847f blue:0.898f alpha:1.00f]];
         [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         [button setTitle:answer forState:UIControlStateNormal];
         [button addTarget:self
@@ -66,12 +67,17 @@
     }
 }
 
-- (void)setLastSavedLabel {
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
-    [dateFormatter setDateFormat:[NSDateFormatter dateFormatFromTemplate:@"hh:mm a" options:0 locale:[NSLocale currentLocale]]];
-    NSString *formattedDate = [dateFormatter stringFromDate:_lastPatientTime];
-    
-    _lastPatientTimeLabel.text = formattedDate;
+- (void)createLastSavedLabel {
+    if (_lastPatientTime != nil) {
+        _lastPatientView.hidden = NO;
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+        [dateFormatter setDateFormat:[NSDateFormatter dateFormatFromTemplate:@"hh:mm a" options:0 locale:[NSLocale currentLocale]]];
+        NSString *formattedDate = [dateFormatter stringFromDate:_lastPatientTime];
+        
+        _lastPatientViewLabel.text = formattedDate;
+    } else {
+        _lastPatientView.hidden = YES;
+    }
 }
 
 - (NSArray *)questions {

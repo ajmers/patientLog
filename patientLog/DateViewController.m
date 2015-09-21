@@ -21,7 +21,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self createButtonsForValue:@"Continue"];
     
     // Do any additional setup after loading the view.
 }
@@ -40,23 +39,6 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-- (void) createButtonsForValue:(NSString*)value {
-    CGFloat top = 200;
-    
-    UIButton *button = [[UIButton alloc] init];
-    CGSize stringsize = [value sizeWithFont:[UIFont systemFontOfSize:30]];
-    [button setFrame:CGRectMake(40,top,stringsize.width,stringsize.height)];
-    button.layer.masksToBounds = YES;
-    button.layer.cornerRadius = 15.0;
-    [button setBackgroundColor:[UIColor colorWithRed:0.80 green:1.00 blue:0.80 alpha:1.0]];
-    [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-    [button setTitle:value forState:UIControlStateNormal];
-    [button addTarget:self
-                 action:@selector(continueWasPressed:)
-       forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
-}
 
 - (IBAction)continueWasPressed:(id)sender {
    
