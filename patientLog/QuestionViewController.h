@@ -8,12 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "PLpatient.h"
+#import "InputViewController.h"
 
-@interface QuestionViewController : UIViewController
+@interface QuestionViewController : InputViewController
 
-@property (nonatomic, strong) NSArray *questions;
-@property (nonatomic) NSInteger currentIndex;
-@property (strong, nonatomic) PLpatient *patient;
 @property (strong, nonatomic) NSDate *lastPatientTime;
 
 @end

@@ -13,6 +13,7 @@
 		922A38DC1BAF505C007AF782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 922A38DA1BAF505C007AF782 /* Main.storyboard */; };
 		922A38E01BAF53B6007AF782 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 922A38DF1BAF53B6007AF782 /* plus.png */; };
 		922A38E41BAFB0B1007AF782 /* patientLogConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 922A38E31BAFB0B1007AF782 /* patientLogConfig.json */; };
+		923047BE1BB24E90001B3248 /* iosAssets in Resources */ = {isa = PBXBuildFile; fileRef = 923047BD1BB24E90001B3248 /* iosAssets */; };
 		924B5B711BADFB34003D30E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B5B701BADFB34003D30E4 /* main.m */; };
 		924B5B741BADFB34003D30E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B5B731BADFB34003D30E4 /* AppDelegate.m */; };
 		924B5B771BADFB34003D30E4 /* patientLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 924B5B751BADFB34003D30E4 /* patientLog.xcdatamodeld */; };
@@ -22,6 +23,7 @@
 		924B5B8E1BADFB34003D30E4 /* patientLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B5B8D1BADFB34003D30E4 /* patientLogTests.m */; };
 		924B5B991BADFD9C003D30E4 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B5B981BADFD9C003D30E4 /* CoreDataStack.m */; };
 		924B5B9F1BAE2FD1003D30E4 /* PLpatient.m in Sources */ = {isa = PBXBuildFile; fileRef = 924B5B9E1BAE2FD1003D30E4 /* PLpatient.m */; };
+		92A96C981BB37D9D0007FCCA /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A96C971BB37D9D0007FCCA /* InputViewController.m */; };
 		92CC18CF1BAE31B200FE293A /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CC18CE1BAE31B200FE293A /* QuestionViewController.m */; };
 		92CC18D51BAE511A00FE293A /* ConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CC18D41BAE511A00FE293A /* ConfirmationViewController.m */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,7 @@
 		922A38DB1BAF505C007AF782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		922A38DF1BAF53B6007AF782 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		922A38E31BAFB0B1007AF782 /* patientLogConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = patientLogConfig.json; sourceTree = "<group>"; };
+		923047BD1BB24E90001B3248 /* iosAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iosAssets; sourceTree = "<group>"; };
 		924B5B6B1BADFB34003D30E4 /* patientLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = patientLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		924B5B6F1BADFB34003D30E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		924B5B701BADFB34003D30E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -61,6 +64,8 @@
 		924B5B981BADFD9C003D30E4 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
 		924B5B9D1BAE2FD1003D30E4 /* PLpatient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLpatient.h; sourceTree = "<group>"; };
 		924B5B9E1BAE2FD1003D30E4 /* PLpatient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLpatient.m; sourceTree = "<group>"; };
+		92A96C961BB37D9D0007FCCA /* InputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputViewController.h; sourceTree = "<group>"; };
+		92A96C971BB37D9D0007FCCA /* InputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
 		92CC18CD1BAE31B200FE293A /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
 		92CC18CE1BAE31B200FE293A /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
 		92CC18D31BAE511A00FE293A /* ConfirmationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfirmationViewController.h; path = ../ConfirmationViewController.h; sourceTree = "<group>"; };
@@ -120,11 +125,14 @@
 				92036FA31BAE5B9000BF33F1 /* DateViewController.m */,
 				92CC18D31BAE511A00FE293A /* ConfirmationViewController.h */,
 				92CC18D41BAE511A00FE293A /* ConfirmationViewController.m */,
+				92A96C961BB37D9D0007FCCA /* InputViewController.h */,
+				92A96C971BB37D9D0007FCCA /* InputViewController.m */,
 				924B5B9D1BAE2FD1003D30E4 /* PLpatient.h */,
 				924B5B9E1BAE2FD1003D30E4 /* PLpatient.m */,
 				924B5B971BADFD9C003D30E4 /* CoreDataStack.h */,
 				924B5B981BADFD9C003D30E4 /* CoreDataStack.m */,
 				922A38DA1BAF505C007AF782 /* Main.storyboard */,
+				923047BD1BB24E90001B3248 /* iosAssets */,
 				924B5B7E1BADFB34003D30E4 /* Images.xcassets */,
 				924B5B801BADFB34003D30E4 /* LaunchScreen.xib */,
 				924B5B751BADFB34003D30E4 /* patientLog.xcdatamodeld */,
@@ -246,6 +254,7 @@
 				9202A6B71BAF4A260074C342 /* bar-chart.png in Resources */,
 				924B5B7F1BADFB34003D30E4 /* Images.xcassets in Resources */,
 				922A38E01BAF53B6007AF782 /* plus.png in Resources */,
+				923047BE1BB24E90001B3248 /* iosAssets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +275,7 @@
 				924B5B991BADFD9C003D30E4 /* CoreDataStack.m in Sources */,
 				924B5B771BADFB34003D30E4 /* patientLog.xcdatamodeld in Sources */,
 				924B5B741BADFB34003D30E4 /* AppDelegate.m in Sources */,
+				92A96C981BB37D9D0007FCCA /* InputViewController.m in Sources */,
 				92CC18CF1BAE31B200FE293A /* QuestionViewController.m in Sources */,
 				92036FA41BAE5B9000BF33F1 /* DateViewController.m in Sources */,
 				924B5B9F1BAE2FD1003D30E4 /* PLpatient.m in Sources */,

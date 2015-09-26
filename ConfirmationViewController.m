@@ -94,12 +94,15 @@
     CGFloat top = 10;
         
     UIButton *button = [[UIButton alloc] init];
+    UIImage *buttonImage = [UIImage imageNamed:@"iosAssets/bigGreenButton.png"];
+    
     CGSize stringsize = [text sizeWithFont:[UIFont systemFontOfSize:30]];
     [button setFrame:CGRectMake(40,top,stringsize.width,stringsize.height)];
     button.layer.masksToBounds = YES;
-    button.layer.cornerRadius = 15.0;
-    [button setBackgroundColor:[UIColor colorWithRed:0.682f green:0.847f blue:0.898f alpha:1.00f]];
-    [button setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+    button.layer.cornerRadius = 8.0;
+    
+    [button setBackgroundImage:buttonImage forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button setTitle:text forState:UIControlStateNormal];
     [button addTarget:self
                    action:@selector(submitWasPressed:)

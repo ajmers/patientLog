@@ -7,12 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "InputViewController.h"
 #import "PLpatient.h"
 
-@interface DateViewController : UIViewController
-
-@property (strong, nonatomic) PLpatient *patient;
-@property (nonatomic, strong) NSArray *questions;
-@property (nonatomic) NSInteger currentIndex;
+@interface DateViewController : InputViewController
 
 @end

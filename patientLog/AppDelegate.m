@@ -19,11 +19,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     _questions = self.questions;
-    self.window.backgroundColor = [UIColor colorWithRed:0.980f green:0.749f blue:0.478f alpha:1.00f];
+    self.window.backgroundColor = [UIColor colorWithRed:0.910f green:0.910f blue:0.910f alpha:1.00f];
     
     NSError *error = nil;
+    [self customizeAppearance];
     
-    NSDictionary *dict = [AppDelegate dictionaryWithContentsOfJSONString:@"patientLogConfig.json"];
+    //NSDictionary *dict = [AppDelegate dictionaryWithContentsOfJSONString:@"patientLogConfig.json"];
     
     return YES;
 }
@@ -39,6 +40,14 @@
     // might be an NSArray as well!
     if (error != nil) return nil;
     return result;
+}
+
+- (void)customizeAppearance {
+    UIImage *titleBackground = [UIImage imageNamed:@"iosAssets/whiteTItleBG.png"];
+    //[[UINavigationBar appearance] setBackIndicatorImage:backButton];
+    // Customize the title text for *all* UINavigationBars
+    [[UINavigationBar appearance] setBackgroundImage:titleBackground forBarMetrics:UIBarMetricsDefault];
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

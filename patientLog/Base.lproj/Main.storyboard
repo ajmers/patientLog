@@ -17,47 +17,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Entry" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j06-Nf-TeB">
-                                <rect key="frame" x="262" y="130" width="76" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCI-5I-68g">
+                                <rect key="frame" x="42" y="507" width="262" height="36"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MD5-iG-74t">
-                                <rect key="frame" x="11" y="507" width="568" height="36"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Last saved entry at:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPp-NY-dTr">
-                                        <rect key="frame" x="8" y="0.0" width="159" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCI-5I-68g">
-                                        <rect key="frame" x="175" y="0.0" width="238" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.99607843139999996" green="0.95294117649999999" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="tCI-5I-68g" firstAttribute="leading" secondItem="kPp-NY-dTr" secondAttribute="trailing" constant="8" id="3vQ-7k-Jpe"/>
-                                    <constraint firstItem="tCI-5I-68g" firstAttribute="leading" secondItem="kPp-NY-dTr" secondAttribute="trailing" constant="8" id="P3V-4I-pW5"/>
-                                </constraints>
-                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.99607843139999996" green="0.95294117649999999" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="j06-Nf-TeB" secondAttribute="bottom" constant="400" id="59f-4q-TWM"/>
-                            <constraint firstItem="j06-Nf-TeB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HDD-GG-zFN"/>
-                            <constraint firstItem="j06-Nf-TeB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="WgQ-og-R1p"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MD5-iG-74t" secondAttribute="bottom" constant="8" id="som-9Y-DCa"/>
+                            <constraint firstAttribute="centerY" secondItem="tCI-5I-68g" secondAttribute="centerY" constant="-233" id="44j-KW-KSw"/>
+                            <constraint firstItem="tCI-5I-68g" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" placeholder="YES" id="aUe-IH-KTN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IyW-tl-4cz"/>
                     <connections>
-                        <outlet property="label" destination="j06-Nf-TeB" id="Xpk-if-WhM"/>
-                        <outlet property="lastPatientView" destination="MD5-iG-74t" id="QVx-WV-HUO"/>
                         <outlet property="lastPatientViewLabel" destination="tCI-5I-68g" id="n3p-Ln-YFu"/>
                     </connections>
                 </viewController>
@@ -83,36 +57,14 @@
                                     <!--2015-09-20 03:12:34 +0000-->
                                 </date>
                             </datePicker>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iyx-CC-Js2">
-                                <rect key="frame" x="230" y="212" width="150" height="55"/>
-                                <color key="backgroundColor" red="0.68235294117647061" green="0.84705882352941175" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
-                                <state key="normal" title="Continue">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="continueWasPressed:" destination="YRB-WW-cFN" eventType="touchUpInside" id="uZs-T1-Ozn"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.99607843137254903" green="0.95294117647058818" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="3Ts-gR-pmD" secondAttribute="trailing" constant="-32" id="2Iq-5u-ZW1"/>
-                            <constraint firstItem="3Ts-gR-pmD" firstAttribute="leading" secondItem="hjX-vg-5z6" secondAttribute="leadingMargin" id="MGe-Nx-tXW"/>
-                            <constraint firstAttribute="centerX" secondItem="Iyx-CC-Js2" secondAttribute="centerX" constant="-8" id="Tch-pS-WFE"/>
-                            <constraint firstItem="uXw-Pm-U7u" firstAttribute="top" secondItem="3Ts-gR-pmD" secondAttribute="bottom" constant="161" id="cah-y7-RYl"/>
-                            <constraint firstItem="3Ts-gR-pmD" firstAttribute="top" secondItem="Iyx-CC-Js2" secondAttribute="bottom" constant="20" id="pzq-g2-sak"/>
+                            <constraint firstItem="3Ts-gR-pmD" firstAttribute="leading" secondItem="hjX-vg-5z6" secondAttribute="leadingMargin" constant="15" id="PDc-PB-R4s"/>
+                            <constraint firstAttribute="centerY" secondItem="3Ts-gR-pmD" secondAttribute="centerY" constant="-58" id="jNa-ZN-8En"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="confirmButton" destination="Iyx-CC-Js2" id="11F-7R-Ydt"/>
                         <outlet property="date" destination="3Ts-gR-pmD" id="DD3-qc-ggM"/>
                     </connections>
                 </viewController>
@@ -128,14 +80,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="sectionIndexBackgroundColor" red="0.99494949489999995" green="0.95321015450000002" blue="0.886171983" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.18823529411764706" green="0.19215686274509805" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" restorationIdentifier="Confirmation" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="e8n-20-NRa">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e8n-20-NRa" id="39o-Rf-Ofn">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.99494949489999995" green="0.95321015450000002" blue="0.886171983" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>

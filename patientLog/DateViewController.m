@@ -21,7 +21,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIView *superview = self.view;
+
+    [self setTitle:@"date"];
     
+    UIButton *button = [super createButtonWithText:@"Continue" :(CGFloat)200:NO];
+    [button addTarget:self
+            action:@selector(continueWasPressed:)
+            forControlEvents:UIControlEventTouchUpInside];
     // Do any additional setup after loading the view.
 }
 
@@ -43,20 +50,8 @@
 - (IBAction)continueWasPressed:(id)sender {
    
     NSDate *date = _date.date;
-    [_patient setDate:date];
-    
-    if (_currentIndex >= [_questions count] - 1) {
-        ConfirmationViewController *confirmation = [self.storyboard instantiateViewControllerWithIdentifier:@"Confirmation"];
-        [confirmation setPatient:_patient];
-        [confirmation setQuestions: _questions];
-        [self.navigationController pushViewController:confirmation animated:YES];
-    } else {
-        QuestionViewController *nextQuestion = [self.storyboard instantiateViewControllerWithIdentifier:@"Question"];
-        [nextQuestion setCurrentIndex:_currentIndex + 1];
-        [nextQuestion setQuestions: _questions];
-        [nextQuestion setPatient:_patient];
-        [self.navigationController pushViewController:nextQuestion animated:YES];
-    }
-}
+    [super.patient setDate:date];
 
+    [super displayNextView];
+}
 @end
