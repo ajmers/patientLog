@@ -13,7 +13,7 @@
 
 @interface ConfirmationViewController ()
 
-
+-(void)createButtonWithText:(NSString*)text;
 @end
 
 @implementation ConfirmationViewController
@@ -75,6 +75,9 @@
     [cell.contentView addSubview:keyLabel];
     [cell.contentView addSubview:valueLabel];
     
+    keyLabel.font = [UIFont fontWithName:@"American Typewriter" size:16.0f];
+    valueLabel.font = [UIFont fontWithName:@"American Typewriter" size:16.0f];
+    
     return cell;
 }
 
@@ -88,30 +91,42 @@
     return convertedString;
 }
 
-- (void) createButtonWithText:(NSString*)text {
+-(void)createButtonWithText:(NSString*)text {
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 80)];
     
     CGFloat top = 10;
-        
-    UIButton *button = [[UIButton alloc] init];
-    UIImage *buttonImage = [UIImage imageNamed:@"iosAssets/bigGreenButton.png"];
     
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     CGSize stringsize = [text sizeWithFont:[UIFont systemFontOfSize:30]];
-    [button setFrame:CGRectMake(40,top,stringsize.width,stringsize.height)];
+    [button setFrame:CGRectMake(40,top,300,stringsize.height *1.5)];
+    
+    [headerView addSubview:button];
+    [self.tableView setTableHeaderView:headerView];
+
+    
+    UIImage *buttonImg = [UIImage imageNamed:@"iosAssets/bigGreenButton.png"];
+    [button setBackgroundImage:buttonImg forState:UIControlStateNormal];
+    
+//    NSLayoutConstraint *myConstraint =[NSLayoutConstraint
+//                                       constraintWithItem:button
+//                                       attribute:NSLayoutAttributeCenterY
+//                                       relatedBy:NSLayoutRelationEqual
+//                                       toItem:headerView
+//                                       attribute:NSLayoutAttributeCenterY
+//                                       multiplier:1.0
+//                                       constant:0];
+//    [headerView addConstraint:myConstraint];
+    
     button.layer.masksToBounds = YES;
     button.layer.cornerRadius = 8.0;
     
-    [button setBackgroundImage:buttonImage forState:UIControlStateNormal];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button setTitle:text forState:UIControlStateNormal];
+    button.font = [UIFont fontWithName:@"American Typewriter" size:16.0f];
     [button addTarget:self
                    action:@selector(submitWasPressed:)
          forControlEvents:UIControlEventTouchUpInside];
-    [headerView addSubview:button];
-    
-    [self.tableView setTableHeaderView:headerView];
 }
-
 
 /*
 // Override to support conditional editing of the table view.

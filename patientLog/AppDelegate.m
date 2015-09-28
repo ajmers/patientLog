@@ -43,7 +43,7 @@
 }
 
 - (void)customizeAppearance {
-    UIImage *titleBackground = [UIImage imageNamed:@"iosAssets/whiteTItleBG.png"];
+    UIImage *titleBackground = [UIImage imageNamed:@"iosAssets/whiteTitleBG.png"];
     //[[UINavigationBar appearance] setBackIndicatorImage:backButton];
     // Customize the title text for *all* UINavigationBars
     [[UINavigationBar appearance] setBackgroundImage:titleBackground forBarMetrics:UIBarMetricsDefault];

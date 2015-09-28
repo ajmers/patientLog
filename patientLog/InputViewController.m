@@ -75,6 +75,7 @@
     
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button setTitle:text forState:UIControlStateNormal];
+    button.font = [UIFont fontWithName:@"American Typewriter" size:16.0f];
     if (assignButton) {
         [button addTarget:self
                    action:@selector(valueButtonWasPressed:)
